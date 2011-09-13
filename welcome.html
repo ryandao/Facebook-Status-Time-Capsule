@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Status Time Capsule</title>
+  	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+	<link href="http://fonts.googleapis.com/css?family=Lobster:regular" rel="stylesheet" type="text/css" >
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+	
+	<script language="javascript" type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+	
+	<h1>Status Time Capsule</h1>
+	<div id="placeholder" style="width:720px;height:300px;"></div>
+	
+	<br />
+	
+	
+	<div class="time-buttons">
+		<div class="timeframe">
+		  <input class="fetchSeries uibutton" type="button" value="All Time">
+		  <a href="js/flot/examples/data-eu-gdp-growth.json"></a>
+		  <span></span>
+		</div>
+		
+		<div class="timeframe">
+		  <input class="fetchSeries uibutton" type="button" value="1 Year">
+		  <a href="js/flot/examples/data-japan-gdp-growth.json"></a>
+		  <span></span>
+		</div>
+		
+		<div class="timeframe">
+		  <input class="fetchSeries uibutton" type="button" value="6 Months">
+		  <a href="js/flot/examples/data-usa-gdp-growth.json"></a>
+		  <span></span>
+		</div>
+		
+		<div class="timeright">
+		  <input class="fetchSeries uibutton" type="button" value="Comments">
+		  <a href="js/flot/examples/data-japan-gdp-growth.json"></a>
+		  <span></span>
+		</div>
+		
+		<div class="timeright">
+		  <input class="fetchSeries uibutton" type="button" value="Likes">
+		  <a href="js/flot/examples/data-usa-gdp-growth.json"></a>
+		  <span></span>
+		</div>
+    </div>	
+    
+    
+    
+    <br />
+    <br />
+    
+    <div class="data-box">
+    	<div class="data-left">
+			<h4>106<span class="data-text">Total Statuses</span></h4>
+			<div class="clearfloat"></div>
+			<h4>251<span class="data-text">Comments On Statues</span></h4>
+			<div class="clearfloat"></div>
+			<h4>209<span class="data-text">Likes On Statuses</span></h4>
+		</div>
+		<div class="data-right">
+			<p class="data-text">More Popular Than</p>
+			<h4 class="percent">55%</h4>
+			<p class="data-text">Of Facebook Users</p>
+		</div>
+	</div>
+	
+	<div class="clearfloat"></div>
+	    
+    
+    <h2>Most Popular Statuses</h2>
+    
+    <div class="status">
+    	<p class="popularitynumber">41</p>
+    	<div class="popularitybubble">
+		<p class="status-bubble">LA &gt; Shanghai &gt; Hong Kong &gt; Singapore. Back in a year americuhhhh.
+		</p>
+		
+		<div class="status details">
+			<span class="status details left">Jul 17, 2011</span>
+			<span class="status details right">
+				<a class="like-thumb-icon" ></a> 27  <a class="comment-icon" ></a> 19 
+			</span>
+		</div>
+		</div>
+    </div>
+    
+    <br />
+
+    
+    <div class="status">
+    	<p class="popularitynumber">37</p>
+    	<div class="popularitybubble">
+		<p class="status-bubble">LA &gt; Shanghai &gt; Hong Kong &gt; Singapore. Back in a year americuhhhh.
+		</p>
+		
+		<div class="status details">
+			<span class="status details left">Jul 17, 2011</span>
+			<span class="status details right">
+				<a class="like-thumb-icon" ></a> 27  <a class="comment-icon" ></a> 19 
+			</span>
+		</div>
+		</div>
+    </div>
+    
+    <br />
+
+    
+    <div class="status">
+    	<p class="popularitynumber">33</p>
+    	<div class="popularitybubble">
+		<p class="status-bubble">LA &gt; Shanghai &gt; Hong Kong &gt; Singapore. Back in a year americuhhhh.
+		</p>
+		
+		<div class="status details">
+			<span class="status details left">Jul 17, 2011</span>
+			<span class="status details right">
+				<a class="like-thumb-icon" ></a> 27  <a class="comment-icon" ></a> 19 
+			</span>
+		</div>
+		</div>
+    </div>
+    
+    <div class="clearfloat"></div>
+    
+    <br />
+    <br />
+    <h2>Oldest Statuses</h2>
+    
+    <div class='status'>
+		<p class='status-bubble'>LA &gt; Shanghai &gt; Hong Kong &gt; Singapore. Back in a year americuhhhh.
+		</p>
+		
+		<div class='status details'>
+			<span class='status details left'>Jul 17, 2011</span>
+			<span class='status details right'>
+				<a class='like-thumb-icon' ></a> 27  <a class='comment-icon' ></a> 19 
+			</span>
+		</div>
+    </div>
+    <br />
+    <br />
+    <h2>All Statuses</h2>
+    
+    <div class="status">
+		<p class="status-bubble">LA &gt; Shanghai &gt; Hong Kong &gt; Singapore. Back in a year americuhhhh.
+		</p>
+		
+		<div class="status details">
+			<span class="status details left">Jul 17, 2011</span>
+			<span class="status details right">
+				<a class="like-thumb-icon" ></a> 27  <a class="comment-icon" ></a> 19 
+			</span>
+		</div>
+    </div>
+    
+    <br />
+    
+    <div class="status">
+		<p class="status-bubble">LA &gt; Shanghai &gt; Hong Kong &gt; Singapore. Back in a year americuhhhh.
+		</p>
+		
+		<div class="status details">
+			<span class="status details left">Jul 17, 2011</span>
+			<span class="status details right">
+				<a class="like-thumb-icon" ></a> 27  <a class="comment-icon" ></a> 19 
+			</span>
+		</div>
+    </div>
+    
+    <br />
+    
+    <div class="status">
+		<p class="status-bubble">LA &gt; Shanghai &gt; Hong Kong &gt; Singapore. Back in a year americuhhhh.
+		</p>
+		
+		<div class="status details">
+			<span class="status details left">Jul 17, 2011</span>
+			<span class="status details right">
+				<a class="like-thumb-icon" ></a> 27  <a class="comment-icon" ></a> 19 
+			</span>
+		</div>
+    </div>
+    
+    
+    
+
+    
+    
+	
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".timeframe .uibutton:first").addClass("confirm");
+	
+	$(".timeframe .uibutton").click(function(){
+		$(".timeframe .confirm").toggleClass("confirm");
+		$(this).next().slideToggle();
+		$(this).toggleClass("confirm");
+	})
+});
+
+$(document).ready(function(){
+	$(".timeright .uibutton:last").addClass("confirm");
+	
+	$(".timeright .uibutton").click(function(){
+		$(".timeright .confirm").toggleClass("confirm");
+		$(this).next().slideToggle();
+		$(this).toggleClass("confirm");
+	})
+});
+
+
+// --BEGIN-- JS-FB Status Pulling
+$(function () {
+    var options = {
+        lines: { show: true },
+        points: { show: true },
+        xaxis: { tickDecimals: 0, tickSize: 1 },
+        grid: { hoverable: true, clickable: true }
+    };
+    var data = [];
+    var placeholder = $("#placeholder");
+    
+    $.plot(placeholder, data, options);
+    
+	
+	// Add tooltip to graph
+	function showTooltip(x, y, contents) {
+	    $('<div id="tooltip">' + contents + '</div>').css( {
+	        position: 'absolute',
+	        display: 'none',
+	        top: y + 5,
+	        left: x + 5,
+	        border: '1px solid #fdd',
+	        padding: '2px',
+	        'background-color': '#fee',
+	        opacity: 0.80
+	    }).appendTo("body").fadeIn(200);
+	}
+	
+	var previousPoint = null;
+	$("#placeholder").bind("plothover", function (event, pos, item) {
+	    $("#x").text(pos.x.toFixed(2));
+	    $("#y").text(pos.y.toFixed(2));
+	
+	    
+	        if (item) {
+	            if (previousPoint != item.dataIndex) {
+	                previousPoint = item.dataIndex;
+	                
+	                $("#tooltip").remove();
+	                var x = item.datapoint[0].toFixed(2),
+	                    y = item.datapoint[1].toFixed(2);
+	                
+	                showTooltip(item.pageX, item.pageY,
+	                            item.series.label + " of " + x + " = " + y);
+	            }
+	        }
+	        else {
+	            $("#tooltip").remove();
+	            previousPoint = null;            
+	        }
+	    
+	});
+
+    
+    // fetch one series, adding to what we got
+    var alreadyFetched = {};
+    
+    $("input.fetchSeries").click(function () {
+        var button = $(this);
+        
+        // find the URL in the link right next to us 
+        var dataurl = button.siblings('a').attr('href');
+        // !--NEEDS to be edited for FB JSON feed--!
+        
+
+        // then fetch the data with jQuery
+        function onDataReceived(series) {
+            // extract the first coordinate pair so you can see that
+            // data is now an ordinary Javascript object
+            var firstcoordinate = '(' + series.data[0][0] + ', ' + series.data[0][1] + ')';
+
+            //button.siblings('span').text('Fetched ' + series.label + ', first point: ' + firstcoordinate);
+
+            // let's add it to our current data
+            if (!alreadyFetched[series.label]) {
+                alreadyFetched[series.label] = true;
+                data.push(series);
+            }
+            
+            // and plot all we got
+            $.plot(placeholder, data, options);
+         }
+        
+        $.ajax({
+            url: dataurl,
+            method: 'GET',
+            dataType: 'json',
+            success: onDataReceived
+        });
+    });
+
+
+    // initiate a recurring data update
+    $("input.dataUpdate").click(function () {
+        // reset data
+        data = [];
+        alreadyFetched = {};
+        
+        $.plot(placeholder, data, options);
+
+        var iteration = 0;
+        
+        function fetchData() {
+            ++iteration;
+
+            function onDataReceived(series) {
+                // we get all the data in one go, if we only got partial
+                // data, we could merge it with what we already got
+                data = [ series ];
+                
+                $.plot($("#placeholder"), data, options);
+            }
+        
+            $.ajax({
+                // usually, we'll just call the same URL, a script
+                // connected to a database, but in this case we only
+                // have static example files so we need to modify the
+                // URL
+                url: "data-eu-gdp-growth-" + iteration + ".json",
+                method: 'GET',
+                dataType: 'json',
+                success: onDataReceived
+            });
+            
+            if (iteration < 5)
+                setTimeout(fetchData, 1000);
+            else {
+                data = [];
+                alreadyFetched = {};
+            }
+        }
+
+        setTimeout(fetchData, 1000);
+    });
+});
+
+</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,613 @@
+/* HTML5 ✰ Boilerplate
+ * ==|== normalize ==========================================================
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+p { margin: 0; }
+
+
+
+/* ------------------------------------------
+CSS3 FACEBOOK-STYLE BUTTONS (Nicolas Gallagher)
+------------------------------------------ */
+
+/* ----------------------------------- BUTTON */
+
+.uibutton { 
+    position: relative; 
+    z-index: 1;
+    overflow: visible; 
+    display: inline-block; 
+    padding: 0.3em 0.6em 0.375em; 
+    border: 1px solid #999; 
+    border-bottom-color: #888;
+    margin: 0;
+    text-decoration: none; 
+    text-align: center;
+    font: bold 11px/normal 'lucida grande', tahoma, verdana, arial, sans-serif; 
+    white-space: nowrap; 
+    cursor: pointer; 
+    /* outline: none; */
+    color: #333; 
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f6f6), to(#e4e4e3));
+    background-image: -moz-linear-gradient(#f5f6f6, #e4e4e3);
+    background-image: -o-linear-gradient(#f5f6f6, #e4e4e3);
+    background-image: linear-gradient(#f5f6f6, #e4e4e3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f6', EndColorStr='#e4e4e3'); /* for IE 6 - 9 */
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+}
+
+.uibutton:hover,
+.uibutton:focus,
+.uibutton:active {
+    border-color: #777 #777 #666;
+}
+
+.uibutton:active {
+    border-color: #aaa;
+    background: #ddd;
+    filter: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* overrides extra padding on button elements in Firefox */
+.uibutton::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* .................................................. Icons */
+
+.uibutton.icon:before {
+    content: "";
+    position: relative; 
+    top: 1px; 
+    float:left;
+    width: 10px; 
+    height: 12px; 
+    margin: 0 0.5em 0 0; 
+    background: url(fb-icons.png) 99px 99px no-repeat;
+}
+
+.uibutton.edit:before  { background-position: 0 0; }
+.uibutton.add:before  { background-position: -10px 0; }
+.uibutton.secure:before  { background-position: -20px 0; }
+.uibutton.prev:before  { background-position: -30px 0; }
+.uibutton.next:before  { float:right; margin: 0 -0.25em 0 0.5em; background-position: -40px 0; }
+
+/* ------------------------------------------------- BUTTON EXTENSIONS */
+
+/* .......................................................... Large */
+
+.uibutton.large {
+    font-size: 13px;
+}
+
+/* ................................................. Submit, etc */
+
+.uibutton.confirm {
+    border-color: #29447e #29447e #1a356e;
+    color: #fff;
+    background-color: #5B74A8;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#637bad), to(#5872a7));
+    background-image: -moz-linear-gradient(#637bad, #5872a7);
+    background-image: -o-linear-gradient(#637bad, #5872a7);
+    background-image: linear-gradient(#637bad, #5872a7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#637bad', EndColorStr='#5872a7'); /* for IE 6 - 9 */
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+}
+
+.uibutton.confirm:active {
+    border-color: #29447E;
+    background: #4F6AA3;
+    filter: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* ......................................................... Special */
+
+.uibutton.special {
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    color: #fff;
+    background-color: #69a74e;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75ae5c), to(#67a54b));
+    background-image: -moz-linear-gradient(#75ae5c, #67a54b);
+    background-image: -o-linear-gradient(#75ae5c, #67a54b);
+    background-image: linear-gradient(#75ae5c, #67a54b);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#75ae5c', EndColorStr='#67a54b'); /* for IE 6 - 9 */
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #98c286;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #98c286;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #98c286;
+}
+
+.uibutton.special:active {
+    border-color: #3b6e22;
+    background: #609946;
+    filter: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* ......................................................... Disable */
+
+.uibutton.disable {
+    z-index: 0;
+    border-color: #c8c8c8;
+    color: #b8b8b8;
+    background: #f2f2f2;
+    cursor: default;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.uibutton.confirm.disable {
+    color: #fff;
+    border-color: #94a2bf;
+    background: #adbad4;
+}
+
+.uibutton.special.disable {
+    color: #fff;
+    border-color: #9db791;
+    background: #b4d3a7;
+}
+
+.uibutton.disable.icon:before,
+.uibutton.disable.icon:after {
+    opacity: 0.5;
+}
+
+/* ---------------------------------------------------------- BUTTON GROUPS */
+
+.uibutton-group {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* IE hacks */
+    zoom: 1; 
+    *display: inline; 
+}
+
+.uibutton + .uibutton,
+.uibutton + .uibutton-group,
+.uibutton-group + .uibutton,
+.uibutton-group + .uibutton-group {
+    margin-left: 3px;
+}
+
+.uibutton-group li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.uibutton-group .uibutton {
+    float: left;
+    margin-left: -1px; 
+}
+
+.uibutton-group .uibutton:hover,
+.uibutton-group .uibutton:focus,
+.uibutton-group .uibutton:active {
+    z-index:2;
+}
+
+.uibutton-group > .uibutton:first-child,
+.uibutton-group li:first-child .uibutton { 
+    margin-left: 0; 
+}
+
+/* ------------------------------------------ BUTTON CONTAINER */
+/* For mixing buttons and button groups, e.g., in a navigation bar */
+
+.uibutton-toolbar {
+    padding: 6px;
+    border-top: 1px solid #ccc;
+    background: #f2f2f2;
+}
+
+.uibutton-toolbar .uibutton,
+.uibutton-toolbar .uibutton-group {
+    vertical-align: bottom;
+}
+
+
+
+
+/* ==|== non-semantic helper classes ======================================== */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (min-width: 480px) {
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+
+
+/* ==|== primary styles =====================================================
+   Author: Joey Cody
+   ========================================================================== */
+   
+
+/* ------------------------------------------
+MAIN CSS STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Status TimeCapsule ~~~~~~~~~~~~~~~~~~~~~~~~~~
+CS3216 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------ */
+body {
+	/*background-color: #11A9E2;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0d86b3), to(#11a9e2));
+	background-image: -moz-linear-gradient(#0d86b3, #11a9e2);
+	background-repeat: no-repeat;*/
+	text-rendering: optimizeLegibility;
+	/*font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+#wrapper {
+	/*border-color: #333333;
+	border-width: 1px;
+	border-style: inset;*/
+	width: 720px;
+	color: #aaa;
+  font-family: 'Droid Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.clearfloat {
+	clear: both;
+}
+
+h1 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 70px;
+	color: #CEBEA7;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.6);
+	margin: 20px 0;
+}
+
+h2 {
+	font-family: 'Droid Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-weight:bold;
+	color:#222;
+	margin-top: 10px;
+	/*font: bold 30px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+
+h3 {
+	font-family: 'Droid Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+	color:#222;
+	/*font: bold 30px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+
+a, a:hover, a:visited {color: #3b5998;}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+.timeframe {
+	float: left;
+	margin: 0 5px;
+}
+
+.time-buttons {
+	
+
+}
+
+.timeright {
+	float: right;
+	margin: 0 5px;
+}
+
+.status {
+	margin-bottom:30px;
+}
+
+/* Speech Bubble */
+.status-bubble {
+	position:relative;
+	padding:15px;
+	margin:1em 0 0em;
+	color:#000;
+  
+	background:#F6F6F6; /* default background for browsers without gradient support */
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#F4E9DA), to(#CEBEA7));
+	background:-moz-linear-gradient(#F4E9DA, #CEBEA7);
+	background:-o-linear-gradient(#F4E9DA, #CEBEA7);
+	background:linear-gradient(#F4E9DA, #CEBEA7);
+	
+  
+	border-radius:10px;
+	border: 1px solid #F4E9DA;
+	box-shadow: inset 1px 1px 0 0 #FFF3E3;
+  
+}
+
+.status-bubble:after {
+	content:"";
+	position:absolute;
+	bottom:-15px; /* value = - border-top-width - border-bottom-width */
+	left:50px; /* controls horizontal position */
+	border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
+	border-style:solid;
+	border-color:#CEBEA7 transparent;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+}
+
+.popularitybubble {
+	width: 600px;
+	float: left;
+}
+
+p.status-bubble {
+	font-family: 'Droid Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight:normal;
+	/*color:#666;*/
+	text-shadow: 0px 1px 0px #FFF;
+  
+}
+
+.popularitynumber {
+	float: left;
+	font-family: 'Lobster', serif;
+	font-size: 60px;
+	margin: 30px 0px;
+	width:100px;
+	color: rgba(0, 168, 255, 1);
+	text-shadow: 3px 3px 0 rgba(255, 0, 180, 1);
+	text-align: center;
+}
+
+
+.status .details {
+	color: #bbb;
+	padding-top:2px;
+}
+
+.status .details .left {
+	margin-left:100px;
+	font-size: 12px;
+}
+
+.status .details .right {
+	float:right;
+	color:#3B5998;
+}
+
+.like-thumb-icon {
+	background-image: url('../images/fbicons.png');
+	background-repeat: no-repeat;
+	background-position: -14px -153px;
+	display: inline-block;
+	height: 13px;
+	width: 15px;
+	border:none;
+	margin: 0 3px;
+}
+img {
+	border:none;
+}
+
+.comment-icon {
+	background-image: url('../images/fbicons.png');
+	background-repeat: no-repeat;
+	background-position: -121px -117px;
+	display: inline-block;
+	height: 15px;
+	width: 16px;
+	margin: 0 3px;
+}
+
+h4 {
+		color: #E9E9E9;
+		font-size: 40px;
+		margin: 15px 0 0 0;
+		font-family: 'Myriad-Pro', 'Myriad', Helvetica, arial, sans-serif;
+		text-shadow: 1px 1px 4px #191919;
+		-webkit-text-stroke: 1px white;
+		/*background: -moz-linear-gradient(left,  #E9E9E9,  #fff);*/
+
+}
+
+.percent {
+	font-size: 70px;
+}
+
+.data-box {
+	height: 210px;
+	width: 100%;
+	background-repeat: repeat;
+	background-image: url(../images/bg.png);
+	border-top:1px solid #222;
+	border-bottom:1px solid #222;
+	-moz-box-shadow:inset 0 0 5px #000000;
+   	-webkit-box-shadow:inset 0 0 5px #000000;
+   	box-shadow:inset 0 0 5px #000000;
+   	margin-top: 30px;
+}
+
+.data-box h4 {
+	/*float: left;*/
+}
+
+.data-text {
+	font-family: 'Droid Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+	color:#222;
+	vertical-align: middle;
+	text-shadow: 1px 1px 0px #E9E9E9;
+	-webkit-text-stroke: 0;
+	background: -moz-linear-gradient(0);
+	margin-left: 15px;
+}
+
+p.data-text {
+	margin:0;
+}
+
+.data-left {
+	width: 300px;
+	padding-left:70px;
+	float: left;
+	/*border-right: 1px solid #999;*/
+}
+
+.data-right {
+	width: 300px;
+	float:left;
+	text-align: center;
+	margin-left: 30px;
+	padding-top:40px;
+}
+
+.data-right h4 {
+	display:block;
+	margin:0;
+}
+
+.main-tab-member {
+  display: none;
+}
+#tab-pop-content {
+  display: block;
+}
+
+#nav-buttons {
+  margin-top: 5px;	
+}
+.leaderboard-item {
+  margin-bottom: 10px;
+  clear: both;
+}
+.leaderboard-name {
+  font-size: 25px;
+}
+.leaderboard-rank {
+  font-size: 40px;
+  width: 60px;
+  float: left;
+  text-align:right;
+  margin-right: 10px;
+}
+.leaderboard-photo {
+  float: left;
+  width: 50px;
+}
+.leaderboard-desc {
+  float: left;
+  margin-left: 10px;
+}
+
+/* Share button */ 
+#share-karma {
+	margin-top: 10px;    
+}
+
+
+#footer {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+/* special styles only for standalone pages (eg. privacy policy) */
+.standalone-page #wrapper {
+  margin: 1em;
+  color: #424242;
+}
+.standalone-page p {
+  margin-bottom: 0.5em;
+}

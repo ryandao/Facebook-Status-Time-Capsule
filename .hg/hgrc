@@ -1,0 +1,2 @@
+[paths]
+default = ssh://hg@ec2-75-101-236-189.compute-1.amazonaws.com//var/www/html
